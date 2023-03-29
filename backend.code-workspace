@@ -5,6 +5,14 @@
 			"path": "./src/backend/"
 		},
 		{
+			"name": "github",
+			"path": ".github"
+		},
+		{
+			"name": "k8s-kustomize",
+			"path": "./k8s-kustomize"
+		},	
+		{
 			"name": "basket-api",
 			"path": "./src/backend/services/basket.api"
 		},
@@ -21,8 +29,8 @@
 			"path": "./src/backend/services/order.api"
 		},
 		{
-			"name": "gateway-api",
-			"path": "./src/backend/gateway/restaurant-gateway"
+			"name": "nginx",
+			"path": "./src/backend/nginx"
 		},
 		{
 			"name": "dashboard-app",
@@ -38,5 +46,13 @@
 		{
 			"path": "./src/backend/scripts"
 		}
-	]
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.classpath": true,
+			"**/.project": true,
+			"**/.settings": true,
+			"**/.factorypath": true
+		}
+	}
 }

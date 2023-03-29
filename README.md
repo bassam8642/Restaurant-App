@@ -1,4 +1,6 @@
 # Restaurant App 
+if you have any questions, don't hesitate to ask [me on twitter](https://twitter.com/jurabek0).
+
 [![Gitter](https://badges.gitter.im/Restaurant-App-Community/community.svg)](https://gitter.im/Restaurant-App-Community/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 Restaurant App is containerized polyglot microservices application that contains projects based on .NET Core, Golang, Java, Xamarin, React, Angular and etc. The project demonstrates how to develop small microservices for larger applications using containers, orchestration, service discovery, gateway, and best practices. You are always welcome to improve code quality and contribute it, if you have any questions or issues don't hesitate to ask in our [gitter](https://gitter.im/Restaurant-App-Community/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) chat.
@@ -7,10 +9,11 @@ To getting started, simply fork this repository. Please refer to [CONTRIBUTING.m
 
 ## Motivation
 
-- Developing independently deployable and scalable micro-services
+- Developing independently deployable and scalable micro-services based on best practies using containerization ☸ 🐳 
 - Developing cross-platform beautiful mobile apps using Xamarin.Forms
-- Configuring CI/CD pipelines using Gitlab CI, Azure DevOps, automated deployments using k8s, Helm, Docker
-- Using modern technologies such as GraphQL, gRPC, Apache Kafka, Serverless, Service meshes
+- Developing Single Page applications using React and Angular including best practices
+- Configuring fully automated CI/CD pipelines using Github Actions to mono-repo and Azure Pipelines and AppCenter for mobile
+- Using modern technologies such as GraphQL, gRPC, Apache Kafka, Serverless, Istio
 - Writing clean, maintainable and fully testable code, Unit Testing, Integration Testing and Mocking practices
 - Using SOLID Design Principles
 - Using Design Patterns and Best practices in different programming languages
@@ -110,11 +113,12 @@ The architecture proposes a micro-service oriented architecture implementation w
 </table>
 
 ## Mobile app
+[Unfortunately I no longer be able to maintain Xamarin(mobile) part](https://github.com/chayxana/Restaurant-App/issues/81)
 
 | Mobile              | Build status | Release |
 |---------------------|--------------|-------------------|
-| Android             |[![Build Status](https://jurabek.visualstudio.com/Restaurant-App/_apis/build/status/Jurabek.Restaurant-App?branchName=develop&jobName=Android)](https://jurabek.visualstudio.com/Restaurant-App/_build/latest?definitionId=10&branchName=develop)  | [Download Android]("/") |
-| iOS                 | [![Build Status](https://jurabek.visualstudio.com/Restaurant-App/_apis/build/status/Jurabek.Restaurant-App?branchName=develop&jobName=iOS)](https://jurabek.visualstudio.com/Restaurant-App/_build/latest?definitionId=10&branchName=develop) | [Download iOS]("/") |
+| Android             |[![Build Status](https://dev.azure.com/jurabek/Restaurant%20App/_apis/build/status/chayxana.Restaurant-App?branchName=develop&jobName=Android)](https://dev.azure.com/jurabek/Restaurant%20App/_build/latest?definitionId=11&branchName=develop)| [Download Android]("/") |
+| iOS                 |[![Build Status](https://dev.azure.com/jurabek/Restaurant%20App/_apis/build/status/chayxana.Restaurant-App?branchName=develop&jobName=iOS)](https://dev.azure.com/jurabek/Restaurant%20App/_build/latest?definitionId=11&branchName=develop)| [Download iOS]("/") |
 
 Mobile app developed by Xamarin.Forms and supports iOS and Android, here you can find how to develop cross-platform mobile apps using C#.
 The example shows how to develop beautiful user interfaces using Xamarin.Forms and how to manage your code with Clean Architecture on the mobile side and get a clean, maintainable, testable code.

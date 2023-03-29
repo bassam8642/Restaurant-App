@@ -27,7 +27,7 @@ jobs:
           fetch-depth: '0'
       
       - name: Setup .NET Core SDK
-        uses: actions/setup-dotnet@v1.4.0
+        uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 3.1.100
 
@@ -80,7 +80,7 @@ jobs:
         ls -a
         cp -r menu_api/ ./src/backend/services/menu.api/menu-api-release
     - name: Publish docker image
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: jurabek/menu
         username: ${{ secrets.DOCKER_USERNAME }}

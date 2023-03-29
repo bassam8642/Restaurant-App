@@ -1,13 +1,19 @@
-version: '3'
+version: '3.7'
 
 services:
-  gateway-api:
-    image: restaurant/gateway
+  nginx:
+    image: restaurant/nginx
     build: 
-      context: ./gateway/restaurant-gateway/
-      dockerfile: Dockerfile.local
+      context: ./nginx
+      dockerfile: Dockerfile
     ports: 
       - "8080:8080"
+    depends_on:
+      - menu-api
+      - dashboard-app
+      - identity-api
+      - basket-api
+      - order-api
 
   identity-api:
     image: restaurant/identity
@@ -43,7 +49,13 @@ services:
     image: restaurant/dashboard
     build:
       context: ./web/web.admin/dashboard
-      dockerfile: Dockerfile
+      dockerfile: local.Dockerfile
+
+  # web-app:
+  #   image: restaurant/web
+  #   build:
+  #     context: ./web/web.client/web-app
+  #     dockerfile: local.Dockerfile
       
   pgsql:
     image: postgres:alpine
